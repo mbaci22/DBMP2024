@@ -1,0 +1,18 @@
+CREATE TABLE Lecturers (
+  Name VARCHAR(100) ,
+  Surname VARCHAR(100) ,
+  LecturersID INT PRIMARY KEY , 
+  ID VARCHAR(50) PRIMARY KEY , 
+  Birthplace VARCHAR(100), 
+  Birthday DATE , 
+  Sex VARCHAR(50) , 
+  Email VARCHAR(200), 
+  Citizenship VARCHAR(100), 
+  FacultyID INT FOREIGN KEY
+  );
+  
+  CREATE TABLE Faculty (
+    FacultyID INT PRIMARY KEY,
+    FacultyName VARCHAR(50) , 
+    LecturersID INT FOREIGN KEY
+    );
