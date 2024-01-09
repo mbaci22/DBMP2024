@@ -1,13 +1,13 @@
 CREATE TABLE Lecturers (
-  Name VARCHAR(100) ,
-  Surname VARCHAR(100) ,
-  LecturersID INT PRIMARY KEY , 
-  ID VARCHAR(50) PRIMARY KEY , 
-  Birthplace VARCHAR(100), 
-  Birthday DATE , 
+  LecturerName VARCHAR(100) ,
+  LecturerSurname VARCHAR(100) ,
+  LecturerID INT PRIMARY KEY , 
+  LecturerNationalID VARCHAR(50) PRIMARY KEY , 
+  LecturerBirthplace VARCHAR(100), 
+  LecturerBirthday DATE , 
   LecturerSex VARCHAR(50) , 
   LecturerEmail VARCHAR(200), 
-  Citizenship VARCHAR(100), 
+  LecturerCitizenship VARCHAR(100), 
   FacultyID INT FOREIGN KEY
   );
   
