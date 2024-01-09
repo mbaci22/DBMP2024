@@ -1,18 +1,21 @@
 CREATE TABLE Lecturers (
-  LecturerName VARCHAR(100) ,
-  LecturerSurname VARCHAR(100) ,
-  LecturerID INT PRIMARY KEY , 
-  LecturerNationalID VARCHAR(50) PRIMARY KEY , 
-  LecturerBirthplace VARCHAR(100), 
-  LecturerBirthday DATE , 
-  LecturerSex VARCHAR(50) , 
-  LecturerEmail VARCHAR(200), 
-  LecturerCitizenship VARCHAR(100), 
-  FacultyID INT FOREIGN KEY
-  );
-  
-  CREATE TABLE Faculty (
-    FacultyID INT PRIMARY KEY,
-    FacultyName VARCHAR(50) , 
-    LecturersID INT FOREIGN KEY
-    );
+  LecturerName VARCHAR(100),
+  LecturerSurname VARCHAR(100),
+  LecturersID INT,
+  LecturerNationalID VARCHAR(50),
+  LecturerBirthplace VARCHAR(100),
+  LecturerBirthday DATE,
+  LecturerSex VARCHAR(50),
+  LecturerEmail VARCHAR(200),
+  LecturerCitizenship VARCHAR(100),
+  FacultyID INT,
+  PRIMARY KEY (LecturersID, LecturerNationalID),
+  FOREIGN KEY (FacultyID) REFERENCES Faculty(FacultyID)
+);
+
+CREATE TABLE Faculty (
+  FacultyID INT PRIMARY KEY,
+  FacultyName VARCHAR(50),
+  LecturersID INT,
+  FOREIGN KEY (LecturersID) REFERENCES Lecturers(LecturersID)
+);
