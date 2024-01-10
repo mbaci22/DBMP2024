@@ -1,4 +1,4 @@
--- Find the average GPA of all students
+-- Find the average GPA of all students 
   
 SELECT AVG(GPA) 
 AS AverageGPA 
