@@ -8,5 +8,5 @@ CREATE TABLE Courses (
     Attendance INT,
     PRIMARY KEY (CourseID, CourseSemID),
     FOREIGN KEY (LecturersID) REFERENCES Lecturers (LecturersID),
-    FOREIGN KEY (StudentsID) REFERENCES Students (StudentsID),
+    FOREIGN KEY (StudentsID) REFERENCES Students (StudentsID)
 );
