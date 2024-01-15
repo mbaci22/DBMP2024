@@ -1,4 +1,4 @@
--- Top 3 students with the lowest GPA
+-- The lowest GPA
 SELECT StudentID, GPA
 FROM Transcript
 ORDER BY GPA ASC
