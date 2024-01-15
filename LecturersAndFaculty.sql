@@ -8,7 +8,7 @@ CREATE TABLE Lecturers (
   LecturersSex CHAR(1),
   LecturersEmail VARCHAR(20),
   LecturersCitizenship VARCHAR(20),
-  MaritalStauts CHAR(20),
+  LecturersMaritalStauts CHAR(20),
   FacultyID INT,
   PRIMARY KEY (LecturersID, LecturersNationalID),
   FOREIGN KEY (FacultyID) REFERENCES Faculty(FacultyID)
@@ -20,5 +20,5 @@ CREATE TABLE Faculty (
   LecturersID INT,
   StudyProgramName VARCHAR(20),
   FOREIGN KEY (LecturersID) REFERENCES Lecturers(LecturersID)
-  FOREIGN KEY (StudyProgramName) REFERENCES StudyPrograms(StudyProgramName)
+  FOREIGN KEY (StudyProgramID) REFERENCES StudyProgram(StudyProgramID)
 );
