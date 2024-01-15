@@ -20,7 +20,7 @@ CREATE TABLE Faculty (
   LecturersID INT,
   LecturersNationalID VARCHAR(20),
   StudyProgramID INT,
-  FOREIGN KEY (LecturersID) REFERENCES Lecturers(LecturersID),
+  FOREIGN KEY (LecturersID,LecturersNationalID) REFERENCES Lecturers(LecturersID,LecturersNationalID),
   FOREIGN KEY (StudyProgramID) REFERENCES StudyProgram(StudyProgramID)
 );
 
