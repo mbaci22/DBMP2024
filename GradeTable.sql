@@ -3,7 +3,7 @@ CREATE TABLE Grade (
   	  FinalExam FLOAT,
   	  MidtermExam FLOAT,
       Quiz FLOAT,
-      Assigment FLOAT,
+      Assignment FLOAT,
   	  Project FLOAT,
   	  FinalWeight FLOAT,
   	  MidtermWeight FLOAT,
