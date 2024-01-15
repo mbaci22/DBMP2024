@@ -1,0 +1,4 @@
+SELECT AVG(Grade)
+FROM Grades
+WHERE StudentID = 'student_id';
+
