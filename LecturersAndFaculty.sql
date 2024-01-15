@@ -9,7 +9,6 @@ CREATE TABLE Lecturers (
   LecturersEmail VARCHAR(20),
   LecturersCitizenship CHAR(20),
   MaritalStatus CHAR(20),
-  FacultyID INT,
   PRIMARY KEY (LecturersID, LecturersNationalID)
 );
 
