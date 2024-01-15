@@ -1,0 +1,5 @@
+SELECT Courses.CourseName, AVG(Grades.Grade) AS AvgGrade
+FROM Courses
+LEFT JOIN Grades ON Courses.CourseID = Grades.CourseID
+GROUP BY Courses.CourseName
+ORDER BY AvgGrade ASC;
