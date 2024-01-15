@@ -6,6 +6,7 @@ CREATE TABLE Courses (
     Credits INT,
     TotalHours INT,
     Attendance INT,
-    PRIMARY KEY (CourseID, CourseSemID)
-    FOREIGN KEY (LecturersID) REFERENCES Lecturers (LecturersID)
+    PRIMARY KEY (CourseID, CourseSemID),
+    FOREIGN KEY (LecturersID) REFERENCES Lecturers (LecturersID),
+    FOREIGN KEY (StudentsID) REFERENCES Students (StudentsID),
 );
