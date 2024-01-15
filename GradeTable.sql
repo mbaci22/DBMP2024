@@ -13,7 +13,7 @@ CREATE TABLE Grade (
   	  CourseID INT,
   	  CourseSemID INT,
   	  StudentID INT,
-  	  Attendace FLOAT,
+  	  Attendance FLOAT,
   	  FOREIGN KEY (CourseSemID) REFERENCES Courses (CourseSemID),
       FOREIGN KEY (CourseID) REFERENCES Courses (CourseID),
       FOREIGN KEY (StudentID) REFERENCES Student (StudentID) 
