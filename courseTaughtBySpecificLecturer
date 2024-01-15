@@ -1,0 +1,4 @@
+SELECT Courses.CourseName
+FROM Courses
+JOIN Faculty ON Courses.LecturersID = Faculty.LecturersID
+WHERE Faculty.LecturersID = 'lecturers_id';
