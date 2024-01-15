@@ -1,0 +1,20 @@
+CREATE TABLE Grade (
+  	  FinalGrade CHAR (2) NOT NULL,
+  	  FinalExam FLOAT,
+  	  MidtermExam FLOAT,
+      Quiz FLOAT,
+      Assignment FLOAT,
+  	  Project FLOAT,
+  	  FinalWeight FLOAT,
+  	  MidtermWeight FLOAT,
+      QuizWeight FLOAT,
+  	  AssignmentWeight FLOAT,
+  	  ProjectWeight FLOAT,
+  	  CourseID INT,
+  	  CourseSemID INT,
+  	  StudentID INT,
+  	  Attendance FLOAT,
+  	  FOREIGN KEY (CourseSemID) REFERENCES Courses (CourseSemID),
+      FOREIGN KEY (CourseID) REFERENCES Courses (CourseID),
+      FOREIGN KEY (StudentID) REFERENCES Student (StudentID) 
+      );
