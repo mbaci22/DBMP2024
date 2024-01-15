@@ -10,8 +10,7 @@ CREATE TABLE Lecturers (
   LecturersCitizenship CHAR(20),
   MaritalStatus CHAR(20),
   FacultyID INT,
-  PRIMARY KEY (LecturersID, LecturersNationalID),
-  FOREIGN KEY (FacultyID) REFERENCES Faculty(FacultyID)
+  PRIMARY KEY (LecturersID, LecturersNationalID)
 );
 
 CREATE TABLE Faculty (
