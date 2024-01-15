@@ -9,7 +9,7 @@ CREATE TABLE Student (
   StudentEmail VARCHAR (50) NOT NULL, 
   StudentMaritalStatus VARCHAR (35),
   StudentCitizenship VARCHAR (30) NOT NULL,
-  NationalID VARCHAR(10);
+  NationalID VARCHAR(10),
   PRIMARY KEY (StudentID),
   FOREIGN KEY (StudyProgramID) REFERENCES StudyProgram(StudyProgramID) 
 );
